@@ -32,6 +32,7 @@
 
   --color-heading: var(--vt-c-text-light-1);
   --color-text: var(--vt-c-text-light-1);
+  --color-active: hsla(160, 100%, 37%, 1);
 
   --section-gap: 160px;
 }
@@ -59,6 +60,7 @@
 }
 
 body {
+  display: grid;
   min-height: 100vh;
   color: var(--color-text);
   background: var(--color-background);

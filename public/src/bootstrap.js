@@ -5,5 +5,13 @@
  */
 
 window.addEventListener('load',function () {
-  console.info('loaded');
+  // Only add the iframe to the 'Home' page.
+  if (window.location.pathname === '/') {
+    const iframe = document.createElement('iframe');
+
+    iframe.setAttribute('src', '/webchat');
+    iframe.setAttribute('id', 'aiai-vue-drei');
+
+    document.body.insertAdjacentElement('beforeend', iframe);
+  }
 })
