@@ -1,21 +1,25 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
+import CHelloWorld from './components/c-hello-world.vue'
 </script>
 
 <template>
   <header>
     <div class="wrapper">
-      <HelloWorld msg="You did it!" />
+      <c-hello-world msg="Welcome!" />
 
       <nav>
         <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
+        <RouterLink to="/webchat">WebChat</RouterLink>
       </nav>
     </div>
   </header>
 
-  <RouterView />
+  <main>
+    <h1>{{ $route.meta.title }}</h1>
+
+    <RouterView />
+  </main>
 </template>
 
 <style scoped>
