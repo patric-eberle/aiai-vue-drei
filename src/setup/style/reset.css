@@ -79,3 +79,9 @@ p {
 address {
   font-style: normal;
 }
+
+iframe {
+  border: 1px solid white;
+  width: 100%;
+  min-height: 50vh;
+}
