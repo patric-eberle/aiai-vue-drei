@@ -9,7 +9,7 @@ window.addEventListener('load',function () {
   if (window.location.pathname === '/') {
     const iframe = document.createElement('iframe');
 
-    iframe.setAttribute('src', '/webchat');
+    iframe.setAttribute('src', '/webchat/');
     iframe.setAttribute('id', 'aiai-vue-drei');
 
     document.body.insertAdjacentElement('beforeend', iframe);

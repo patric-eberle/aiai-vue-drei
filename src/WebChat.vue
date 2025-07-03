@@ -1,15 +1,10 @@
 <script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router'
-import CHeader from './components/c-header.vue'
 </script>
 
 <template>
-  <c-header />
-
   <main>
-    <h1>{{ $route.meta.title }}</h1>
-
-    <RouterView />
+    <h1>Webchat</h1>
+    <div>This is the content for the Webchat route.</div>
   </main>
 </template>
 

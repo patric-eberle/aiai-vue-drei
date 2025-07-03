@@ -1,9 +1,7 @@
-<script setup lang="ts">
-import CHome from '../components/c-home.vue'
-</script>
+<script setup lang="ts"></script>
 
 <template>
   <main>
-    <c-home />
+    <div>This is the homepage. The chatbot is injected with an external JS file as iframe.</div>
   </main>
 </template>
