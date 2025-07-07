@@ -26,6 +26,7 @@ export default defineConfig({
       input: {
         main: resolve(__dirname, 'index.html'),
         nested: resolve(__dirname, 'webchat/index.html'),
+        bootstrap: resolve(__dirname, 'src/bootstrap.ts'),
       },
     },
   },
